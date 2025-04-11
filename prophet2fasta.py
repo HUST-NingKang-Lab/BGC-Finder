@@ -7,6 +7,7 @@ from model_utils import extract_bgcs, write_fasta_files
 
 
 
+
 def prophet2fasta(cfg, args):
     
     """
