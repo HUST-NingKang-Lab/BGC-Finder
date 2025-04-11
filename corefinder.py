@@ -2,7 +2,6 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 from pickle import load, dump
-import time
 from transformers import EsmModel, EsmTokenizer, RobertaForTokenClassification
 from Bio import SeqIO
 import os

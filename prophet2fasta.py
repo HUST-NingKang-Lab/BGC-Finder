@@ -8,6 +8,7 @@ from model_utils import extract_bgcs, write_fasta_files
 
 
 def prophet2fasta(cfg, args):
+    
     """
     Main function to process Prophet results and generate fasta files for BGCs.
     
@@ -23,6 +24,9 @@ def prophet2fasta(cfg, args):
         if file.endswith('_classified.csv'):
             prophet_res_path = os.path.join(cfg['prophet'], file)
             break
+    
+    if prophet_res_path is None:
+        raise FileNotFoundError("No classified Prophet results found in the BGC-Prophet output directory.")
     
     prophet_res = pd.read_csv(prophet_res_path, index_col=0)
 

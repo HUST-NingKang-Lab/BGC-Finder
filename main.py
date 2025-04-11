@@ -1,5 +1,4 @@
 import sys
-import os
 from model_utils import get_CLI_parser
 
 def main():
@@ -32,7 +31,7 @@ def main():
             'model': args.model
         }
         annotate(cfg, args)
-        
+    
     else:
         print('Invalid mode. Please choose either "annotate" or "pipeline".')
         sys.exit(1)
