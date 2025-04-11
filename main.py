@@ -1,6 +1,8 @@
 import sys
 from model_utils import get_CLI_parser
 
+
+
 def main():
     print('Start runnning CoreFinder...')
     parser = get_CLI_parser()
