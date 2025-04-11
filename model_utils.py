@@ -9,6 +9,7 @@ from tqdm import tqdm
 from typing import Optional
 
 
+
 def find_pkg_resource(path):
     
     if pkg_resources.resource_exists('CoreFinder', path):
