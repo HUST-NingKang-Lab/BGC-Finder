@@ -7,6 +7,7 @@ from Bio import SeqIO
 import os
 
 
+
 class Seq4Transformer(Dataset):
     def __init__(self, seqs, tokenizer, max_len=2048):
         self.seqs = seqs
