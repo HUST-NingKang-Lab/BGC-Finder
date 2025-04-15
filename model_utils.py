@@ -33,7 +33,7 @@ def get_CLI_parser():
                         help='Input file. Required.')
     parser.add_argument('-o', '--output', type=str, required=True,
                         help='Output folder. Required.')
-    parser.add_argument('-m', '--model', type=str, default='model',
+    parser.add_argument('-m', '--model', type=str, default='model/',
                         help='Model folder path')
     
     # --------------------------------------------------
