@@ -27,7 +27,7 @@ def annotate(cfg, args):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     # Load the model and tokenizer
-    embedder_path = os.path.join(cfg['model'], 'esm_model')
+    embedder_path = 'facebook/esm2_t33_650M_UR50D'
     embedder = EsmModel.from_pretrained(embedder_path).to(device)
     tokenizer = EsmTokenizer.from_pretrained(embedder_path)
     
