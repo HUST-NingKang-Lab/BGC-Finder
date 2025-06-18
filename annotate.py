@@ -4,8 +4,7 @@ from tqdm import tqdm
 import numpy as np
 from pickle import load, dump
 from transformers import EsmModel, EsmTokenizer, RobertaForTokenClassification
-from corefinder import get_embeddings, Seq4Transformer
-from model_utils import get_gene_label
+from model_utils import get_gene_label, get_embeddings, Seq4Transformer
 from Bio.Seq import Seq
 from Bio import SeqIO
 import os
