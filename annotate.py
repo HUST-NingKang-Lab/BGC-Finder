@@ -73,13 +73,12 @@ def annotate(cfg, args):
     corefinder_path = os.path.join(cfg['model'], 'corefinder_model')
     model = RobertaForTokenClassification.from_pretrained(corefinder_path).to(device)
     
-    outputs = model(inputs_embeds=reps.unsqueeze(0),
-            token_type_ids=token_type_ids.unsqueeze(0)
+    outputs = model(inputs_embeds=reps.unsqueeze(0).to(device),
+            token_type_ids=token_type_ids.unsqueeze(0).to(device)
             ).logits.squeeze().detach().cpu().numpy()
     
-    logits = outputs.logits.squeeze()
     preds = {}
-    for i in range(len(logits)):
+    for i in range(len(outputs)):
         pred = logits[i]
         preds['gene_function'] = []
         
