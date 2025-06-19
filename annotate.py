@@ -27,7 +27,7 @@ def annotate(cfg, args):
     
     # Load the model and tokenizer
     embedder_path = 'facebook/esm2_t33_650M_UR50D'
-    embedder = EsmModel.from_pretrained(embedder_path).to(device)
+    embedder = EsmModel.from_pretrained(embedder_path, output_hidden_states=True).to(device)
     tokenizer = EsmTokenizer.from_pretrained(embedder_path)
     
     
