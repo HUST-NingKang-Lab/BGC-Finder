@@ -78,9 +78,10 @@ def annotate(cfg, args):
             ).logits.squeeze().detach().cpu().numpy()
     
     preds = {}
+    preds['gene_function'] = []
     for i in range(len(outputs)):
         pred = outputs[i]
-        preds['gene_function'] = []
+        
         
         if i == 0:
             prod = np.array(pred)[:7]
