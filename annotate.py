@@ -79,7 +79,7 @@ def annotate(cfg, args):
     
     preds = {}
     for i in range(len(outputs)):
-        pred = logits[i]
+        pred = outpus[i]
         preds['gene_function'] = []
         
         if i == 0:
