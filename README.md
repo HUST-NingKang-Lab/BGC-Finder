@@ -2,14 +2,20 @@
 
 **BGC-Finder** is a context-aware deep learning framework that leverages protein language models to predict and annotate biosynthetic gene clusters (BGCs).
 
-- 📄 **Preprint**: [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.29.651206v1)  
+- 📄 **Preprint**: [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.29.651206v1
+        
+        
+        
+        
+        
+        )  
 - 🧠 **Model Weights**: [Hugging Face](https://huggingface.co/KangHuggingface/CoreFinder)
 
 ---
 
 ## 🔧 Quick Start
 
-You can annotate your own `.gbk` files online via Google Colab:
+You can annotate your own Genbank files or FASTA files online via Google Colab:
 
 👉 [Colab Notebook for Annotation](https://colab.research.google.com/drive/1gjYhrrkbxqJv_YWfhZS6kK5zA1Bsl-1G?usp=sharing)
 
